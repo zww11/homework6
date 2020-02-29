@@ -2,6 +2,8 @@ var video;
 
 function getVid(){
 	video = document.querySelector("#myVideo"); 
+	document.querySelector(".play").innerHTML = ('<img src="images/play_button.jpg" alt="Play Button" />') + "Play Video";
+	document.querySelector(".pause").innerHTML = ('<img src="images/pause_button.png" alt="Pause Button" />') + "Pause Video";
 }
 
 function playVid() { 
@@ -13,6 +15,7 @@ function playVid() {
 	volume = document.querySelector("#volume"); 
 	console.log(volume);
 	volume.innerHTML = (video.volume * 100) + "%";
+
 } 
 
 function pauseVid() { 
